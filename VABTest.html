@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: gold;
+    }
+
+    /* Header */
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo-img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .form-heading {
+      font-size: 28px;
+      margin: 0;
+      text-align: center;
+      flex: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: red;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover { color: orange; }
+    .nav-links a:active { color: yellow; }
+
+    /* Shop section */
+    .shop-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .product-card {
+      background-color: #111;
+      border: 2px solid gold;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      border-color: orange;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255,165,0,0.6);
+    }
+
+    .product-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+    }
+
+    .product-subtitle {
+      font-size: 14px;
+      color: #ccc;
+      margin: 0 0 5px 0;
+    }
+
+    .status-badge {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      color: red;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+
+    .buy-button {
+      background-color: gold;
+      color: black;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .buy-button:hover {
+      background-color: orange;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: red;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover { color: orange; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links { margin-top: 15px; }
+      .shop-container { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header-container">
+    <img class="logo-img" src="C:\Users\karth\Downloads\my_logo.png" alt="Company Logo">
+    <p class="form-heading">VanBurnerGames</p>
+    <div class="nav-links">
+      <a href="Home.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+      <a href="Shop.html">Shop</a>
+    </div>
+  </div>
+
+  <!-- Shop section -->
+  <h2 style="text-align:center;">Shop</h2>
+  <div class="shop-container">
+    <!-- Black Gun -->
+    <div class="product-card">
+      <img src="BG.png" alt="Black Gun">
+      <p class="product-title">Black Gun</p>
+      <p class="product-subtitle">First-Person Shooter</p>
+      <p class="status-badge">🟢 Coming Soon</p>
+      <p class="product-price">₹499</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+
+    <!-- Apocalypse -->
+    <div class="product-card">
+      <img src="another.png" alt="Apocalypse 2031">
+      <p class="product-title">Apocalypse 2031</p>
+      <p class="product-subtitle">Survival Horror</p>
+      <p class="status-badge">🟡 In Development</p>
+      <p class="product-price">₹799</p>
+      <button class="buy-button">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 VanBurnerGames. All rights reserved.
+    <p>
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>

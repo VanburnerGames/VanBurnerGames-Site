@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif; /* custom font */
+      color: gold;
+    }
+
+    /* Header */
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .logo-img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .form-heading {
+      font-size: 28px;
+      margin: 0;
+      text-align: center;
+      flex: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: red;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover { color: orange; }
+    .nav-links a:active { color: yellow; }
+
+    /* Mission */
+    .mission {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .mission h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .mission p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      color: gold;
+      line-height: 1.6;
+    }
+
+    /* Games showcase */
+    .games-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .game-card {
+      background-color: #111;
+      border: 2px solid gold;
+      border-radius: 8px;
+      width: 220px;
+      text-align: center;
+      padding: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .game-card:hover {
+      border-color: orange;
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255,165,0,0.6);
+    }
+
+    .game-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .game-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+    }
+
+    .game-subtitle {
+      font-size: 14px;
+      color: #ccc;
+      margin: 0 0 5px 0;
+    }
+
+    .status-badge {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: red;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover { color: orange; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links { margin-top: 15px; }
+      .games-container { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header-container">
+    <img class="logo-img" src="C:\Users\karth\Downloads\my_logo.png" alt="Company Logo">
+    <p class="form-heading">VanBurnerGames</p>
+    <div class="nav-links">
+      <a href="Home.html">Home</a>
+   
+      <a href="VanBurnerContact Tab.html">Contact</a>
+      <a href="VanburnersShop.html">Shop</a>
+    </div>
+  </div>
+
+  <!-- Mission -->
+  <div class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      We are a small indie game studio dedicated to creating world-class gaming experiences.<br>
+      Our mission is to build unforgettable games enjoyed by players around the world.<br>
+      Founded on 15 August 2026, India's Independence Day, VanBurnerGames proudly represents Indian game development.<br>
+      <b>Proudly Made in India 🇮🇳</b>
+    </p>
+  </div>
+
+  <!-- Games showcase -->
+  <div class="games-container">
+    <div class="game-card">
+      <img src="BG.png" alt="Black Gun">
+      <p class="game-title">Black Gun</p>
+      <p class="game-subtitle">First-Person Shooter</p>
+      <p class="status-badge">🟢 Coming Soon</p>
+    </div>
+
+    <div class="game-card">
+      <img src="another.png" alt="Black Apocalypse">
+      <p class="game-title">Black Apocalypse</p>
+      <p class="game-subtitle">Survival Horror</p>
+      <p class="status-badge">🟡 In Development</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 VanBurnerGames. All rights reserved.
+    <p>
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://facebook.com">Facebook</a> |
+      <a href="https://instagram.com">Instagram</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+

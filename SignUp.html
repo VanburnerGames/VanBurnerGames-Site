@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    body { background:black; font-family:'Orbitron',sans-serif; color:gold; margin:0; }
+    .signup-container { display:flex; justify-content:center; align-items:center; height:80vh; }
+    .signup-box { background:#111; border:2px solid gold; border-radius:10px; padding:30px; width:320px; text-align:center; }
+    .signup-box input { width:100%; padding:10px; margin:10px 0; border:none; border-radius:8px; }
+    .signup-box button { background:gold; color:black; border:none; padding:12px 25px; border-radius:10px; cursor:pointer; }
+    .signup-box button:hover { background:orange; transform:scale(1.05); }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <div class="signup-box">
+      <h2>Sign Up</h2>
+      <form onsubmit="signup(event)">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="confirm" placeholder="Confirm Password" required>
+        <button type="submit">Create Account</button>
+      </form>
+      <p style="margin-top:15px; font-size:14px; color:#ccc;">
+        Already have an account? <a href="Login.html" style="color:red;">Login</a>
+      </p>
+    </div>
+  </div>
+
+<script>
+function signup(e){
+  e.preventDefault();
+  let user=document.getElementById("username").value;
+  let email=document.getElementById("email").value;
+  let pass=document.getElementById("password").value;
+  let confirm=document.getElementById("confirm").value;
+
+  if(pass!==confirm){ alert("Passwords do not match!"); return; }
+
+  // Save to localStorage (dev simulation)
+  localStorage.setItem("user", JSON.stringify({user,email,pass}));
+  alert("Account created! You can now login.");
+  window.location.href="Login.html";
+}
+</script>
+</body>
+</html>
